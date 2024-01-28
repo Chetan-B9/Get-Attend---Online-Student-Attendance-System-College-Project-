@@ -1,0 +1,118 @@
+#dashboard_content{
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+#student_profile{
+    /* margin-top: -2rem; */
+    width: 50%;
+    padding: 1rem 0rem;
+    background: #f4f3f3;
+    border-radius: 0.4rem;
+    display: flex;
+    /* justify-content: baseline; */
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-size: 0.9rem;
+    box-shadow: 5px 5px 5px #d9d9d9,
+               -0.5px -0.5px 5px #ffffff;
+}
+
+#profile_pic{
+    width: 9rem;
+    height: 9rem;
+    border: 0.1rem solid rgb(194, 194, 194);
+    border-radius: 50%;
+    /* padding: 1rem; */
+    overflow: hidden;
+}
+
+#profile_pic #img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+
+  /* #box{
+    width: 100%;
+    height: 100%;
+    background: rebeccapurple;
+    display: flex;
+    align-items: center;
+} */
+#taken_atten, #give_atten{
+    box-shadow: none;
+}
+
+
+#taken_atten span, #give_atten span{
+    font-size: 2rem;
+    /* color: #2D54FF;
+    font-weight: bolder; */
+}
+
+/* #p_circle_holder{
+    
+    width: 100%;
+    height: 100%;
+    background: rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+#circular_progress{
+
+    /* position: relative; */
+    width: 15rem;
+    height: 15rem;
+    /* transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+    background: rgb(239, 238, 238);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+
+    /* transition-duration: 1s; */
+    /* box-shadow: 5px 5px 5px #d9d9d9,
+    -0.5px -0.5px 5px #ffffff; */
+}
+
+/* #circular_progress::before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: white;
+    transition: ease-in-out;
+
+} */
+
+/* #score_text{
+    position: relative;
+    text-align: center;
+} */
+#score_text h4, #taken_atten h4, #give_atten h4{
+    font-size: large;
+
+    font-weight: bold;
+}
+#score_text span{
+   font-size: 3rem;
+   /* font-weight: bolder;
+   color: #2D54FF; */
+}
+
+
+  

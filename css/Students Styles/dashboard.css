@@ -1,0 +1,85 @@
+/* css for menu bar */
+#menu_bar{
+    height: 4rem;
+    border: 0.1rem solid rgb(194, 194, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+#menu_bar a{
+    color:rgb(47, 47, 47);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#menu_bar a:hover{
+    color: #2D54FF;
+}
+
+a:active{
+    background: blue;
+}
+
+/* css for dashboard main content */
+#dashboard_content{
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+#student_profile{
+    width: 40%;
+    padding: 1rem 0rem;
+    background: #f4f3f3;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-size: 0.9rem;
+    box-shadow: 5px 5px 5px #d9d9d9,
+               -0.5px -0.5px 5px #ffffff;
+}
+
+#profile_pic{
+    width: 9rem;
+    height: 9rem;
+    border: 0.1rem solid rgb(194, 194, 194);
+    border-radius: 50%;
+    /* padding: 1rem; */
+    overflow: hidden;
+}
+
+#profile_pic #img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+#student_profile button{
+    width: 15rem;
+    height: 2.8rem;
+    border-radius: 3rem;
+    background: #2D54FF;
+    border: 0.25rem solid #D5DDFE;
+    font-size: 0.9rem;
+
+
+    color: white;
+   cursor: pointer;
+}
+
+#student_profile button:hover{
+    transition: all .3s;
+    background-color: transparent;
+  color: #2D54FF;
+}
