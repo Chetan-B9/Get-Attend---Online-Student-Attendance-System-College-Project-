@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --web-main-color : #2D54FF;
+    --text-color: #565360;
+    --button-hover-color: #122ca2;
+    --footer-background-color: #211F35;
+  
+  
+    /* font sizes */
+    --sm-text-size : 0.9rem;
+    --lg-text-size : 50rem;
+  } 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main_container{
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin: 5rem 0rem;
+    /* display: hidden; */
+}
+
+#main_container a img{
+    width: 190px;
+    height: 50px;
+    position: relative;
+    left: 6%;
+}
+
+#sub_container{
+    width: 45%;
+    /* background: yellow; */
+}
+
+#btn_container{
+    margin-top: 1.5rem;
+    width: 100%;
+    /* background: green; */
+    display: flex;
+}
+#btn_container button{
+    width: 50%;
+    height: 3rem;
+    font-family: 'Poppins', sans-serif;
+    background: #2D54FF;
+    border: 0.1rem solid #D5DDFE;
+    border-radius: 0.3rem;
+    /* box-shadow: 1px 1px 3px #3b3b3b; */
+    
+    color: white;
+    cursor: pointer;
+
+}
+
+/* #btn_container button:hover{
+    color: #2D54FF;
+    background: white;
+
+} */
+
+
+form{
+    /* background: yellow; */
+    width: 45%;
+    margin-top: 1rem;
+    padding: 1.5%;
+    text-align: center;
+    /* border: 0.1rem solid rgb(155, 155, 155); */
+    border-radius: 0.3rem;
+    /* border-top: 0.1rem solid #D5DDFE; */
+    /* box-shadow: 1px 1px 5px #3b3b3b; */
+    box-shadow: 5px 5px 23px #cccccc,
+                -5px -5px 23px #ffffff;
+
+    display: hidden;
+}
+
+form h3{
+    color: var(--text-color);
+    font-weight: bolder;
+}
+
+form h3 span{
+    color: var(--web-main-color);
+}
+
+#input_Fields_container{
+    margin-top: 2rem;
+    padding: 1.5% 1% 3% 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    /* background: red; */
+    /* width: 100%; */
+    /* height: 2rem; */
+    display: flex;
+    column-gap: 1.5rem;
+
+}
+
+.row #test{
+    width: 49%;
+    /* background: blue; */
+    /* margin-bottom: 3%; */
+
+}
+
+.row #test #normal_fields{
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.row #test p {
+    font-size: 0.7rem;
+    margin-bottom: 3%;
+}
+
+#normal_fields, #large_fields, #short_fields{
+    width: 49%;
+    padding: 1rem;
+    margin: 1% 0%;
+    /* border: 0.1rem solid rgb(155, 155, 155); */
+    border: none;
+    border-radius: 0.3rem;
+    font-size: small;
+    color: var(--text-color);
+    box-shadow: 2px 2px 10px #bfbfbf,
+                -2px -2px 15px #ffffff;
+    outline-style: none;
+}
+
+#test{
+    margin: 1% 0%;
+}
+
+#normal_fields:focus, #large_fields:focus, #short_fields:focus{
+   color: #2D54FF;
+   border: 0.1rem solid #2D54FF;
+}
+
+#large_fields{
+    width: 99.5%;
+}
+
+#short_fields{
+    width: 32.5%;
+}
+
+#input_Fields_container p{
+    font-size: var(--sm-text-size);
+}
+
+/* .password_field::before{
+    content: "hi";
+    width: 2rem;
+    height: 1rem;
+    background: red;
+    
+} */
+
+.course{
+    /* background: red; */
+    font-size: 0.8rem;
+    margin: 1rem 0rem;
+    text-align: left;
+    padding: 1rem 1rem;
+    box-shadow: 2px 2px 10px #bfbfbf,
+    -2px -2px 15px #ffffff;
+}
+
+.course #coursetitle{
+    text-align: left;
+}
+.course #coursetitle input{
+   padding: 10px;
+}
+
+.profile_pic_container{
+    display: flex;
+    align-content: center;
+    column-gap: 1.5rem;
+}
+
+.button_container{
+    display: flex;
+    justify-content: end;
+}
+
+#submit_button{
+    width: 20%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background: var(--web-main-color);
+    border: 0.25rem solid #D5DDFE;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+#submit_button:hover{
+    transition: all .3s;
+    background-color: transparent;
+  color: #2D54FF;
+}
+
+#seperator{
+    background: var(--text-color);
+    width: 100%;
+    height: 0.1rem;
+    margin-top: 1.8rem;
+}
+
+#link{
+   margin-top: 0.5rem;
+}
+
+#link p span{
+    color: var(--web-main-color);
+    font-weight: bold;
+}
+
+#link p span:hover{
+    color: var(--button-hover-color);
+    cursor: pointer;
+}
+
+/* for small devices like mobiles */
+@media only screen and (min-width: 450px) and (max-width: 767px){
+  #form{
+    width: 90%;
+    padding: 1.2rem;
+  }
+
+  #submit_button{
+    width: 28%;
+    height: 2.8rem;
+  }
+
+  #input_Fields_container{
+    padding: 1.5% 0% 3% 0%;
+  }
+
+  
+}
+
+/* for medium devices like tablets */
+@media only screen and (min-width: 768px) and (max-width: 991.98px){
+    #form{
+        width: 70%;
+        padding: 1.5rem;
+    }
+
+    #submit_button{
+        width: 22%;
+        height: 2.8rem;
+      }
+}
+
+/* for mini laptops and desktops */
+@media only screen and (min-width: 768px) and (max-width: 1199.98px){
+    #form{
+        width: 55%;
+        padding: 1.5rem;
+    }
+
+    #submit_button{
+        width: 20%;
+        height: 2.8rem;
+      }
+}
