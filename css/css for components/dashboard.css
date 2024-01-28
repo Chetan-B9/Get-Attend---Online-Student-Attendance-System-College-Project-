@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+#contentContainer {
+    background: red;
+    width: 100%;
+    height: 91.2vh;
+    display: grid;
+    grid-template-columns: 25% 65% 10%;
+}
+
+/* subcontainer 1 style */
+/* #subContainer_1{
+    
+} */
+
+#menu_name_container{
+    background: yellow;
+    margin: 0rem 0rem 0rem 1.25rem;
+    padding: 1rem 0rem 1rem 0rem;
+
+    
+}
+
+#menu_name_container h5{
+    font-weight: bolder;
+    height: 2.5rem;
+    margin-top: 0.8rem;
+    text-align: center;
+    
+}
+
+#menu_box_container{
+    /* background: blueviolet; */
+    height: 15rem;
+    margin-top: 2.188rem;
+}
+
+
+/* css for search box */
+
+.container{
+    width: 95%;
+    height: 2.875rem;
+    /* background: #F2F5F5; */
+    margin-top: 0.8rem;
+    display: flex;
+    border-radius: 0.2rem;
+    box-shadow: 5px 5px 5px #d9d9d9,
+               -0.5px -0.5px 5px #ffffff;
+}
+
+.container input{
+    width: 94%;
+    height: 2.875rem;
+    background: #eef3f3;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    padding-left: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller;
+}
+
+.search_button{
+    width: 6%;
+    height: 2.875rem;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+}
+
+.search_button:hover{
+    cursor: pointer;
+    background: var(--web-main-color);
+}
+
+#welcom_msg{
+    background: red;
+}
+
